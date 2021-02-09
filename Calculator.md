@@ -1,4 +1,4 @@
-    package com.tutorial;
+    package com.calculator;
 
     import java.util.Scanner;
 
