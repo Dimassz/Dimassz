@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner inputUser = new Scanner(System.in);
+        int result;
+        int attemp= 0;
+        boolean x=true;
+
+        System.out.println("1 + 2");
+
+        do {
+            System.out.print("Result:");
+            result= inputUser.nextInt();
+
+            if (result == 3){
+                System.out.println("Correct");
+                x=false;
+
+                }else{
+                attemp++;
+                System.out.println("Wrong");
+                if (attemp == 3){
+                    x=false;
+                    System.out.println("Try Again");
+                }
+            }
+        }while (x);
+    }
+
+}
