@@ -33,7 +33,7 @@ public class Main {
                     switch (input){
                         case"Y", "y":
                             x=true;
-                            attempt=0
+                            attempt=0;
                 }
             }
         }while (x);
