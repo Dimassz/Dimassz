@@ -7,6 +7,7 @@ public class Main {
         int result;
         int attemp= 0;
         boolean x=true;
+        String input;
 
         System.out.println("1 + 2");
 
@@ -18,12 +19,20 @@ public class Main {
                 System.out.println("Correct");
                 x=false;
 
-                }else{
+            }else{
                 attemp++;
                 System.out.println("Wrong");
+
+                }
                 if (attemp == 3){
                     x=false;
                     System.out.println("Try Again");
+                    //----------------
+                    System.out.print("Y/n?");
+                    input=inputUser.next();
+                    switch (input){
+                        case"Y", "y":
+                            x=true;
                 }
             }
         }while (x);
