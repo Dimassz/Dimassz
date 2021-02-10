@@ -20,7 +20,7 @@ public class Main {
                 x=false;
 
             }else{
-                attemp++;
+                attempt++;
                 System.out.println("Wrong");
 
                 }
